@@ -1,8 +1,0 @@
-C:\QProjects\VendingMachine\src\VendingMachine.Domain\bin\Debug\netstandard2.1\Domain.deps.json
-C:\QProjects\VendingMachine\src\VendingMachine.Domain\bin\Debug\netstandard2.1\Domain.dll
-C:\QProjects\VendingMachine\src\VendingMachine.Domain\bin\Debug\netstandard2.1\Domain.pdb
-C:\QProjects\VendingMachine\src\VendingMachine.Domain\obj\Debug\netstandard2.1\Domain.AssemblyInfoInputs.cache
-C:\QProjects\VendingMachine\src\VendingMachine.Domain\obj\Debug\netstandard2.1\Domain.AssemblyInfo.cs
-C:\QProjects\VendingMachine\src\VendingMachine.Domain\obj\Debug\netstandard2.1\Domain.csproj.CoreCompileInputs.cache
-C:\QProjects\VendingMachine\src\VendingMachine.Domain\obj\Debug\netstandard2.1\Domain.dll
-C:\QProjects\VendingMachine\src\VendingMachine.Domain\obj\Debug\netstandard2.1\Domain.pdb

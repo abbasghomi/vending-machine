@@ -50,3 +50,17 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+.vs/
+
+src/VendingMachine.Application/bin/
+
+src/VendingMachine.Application/obj/
+
+src/VendingMachine.Domain/bin/
+
+src/VendingMachine.Domain/obj/
+
+src/VendingMachine.Infrastructure/bin/
+
+src/VendingMachine.Infrastructure/obj/
