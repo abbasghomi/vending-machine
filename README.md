@@ -77,11 +77,17 @@ As you see we defined base properties in DTO class and the Entity Framework rela
 
 ### Domain layer
 
-- [ ] Data model
+- [x] Data model
 
 ​	
 
 ### Application layer
+
+- [x] Mediator pattern implementation
+- [x] CQRS for Machin slots
+- [x] CQRS for product foods
+- [x] CQRS for product drinks
+- [ ] CQRS for order Invoices
 
 
 
