@@ -12,7 +12,7 @@ namespace VendingMachine.Domain.DTOs
         public string SlotNumber { get; set; }
         public int Quantity { get; set; }
         public bool IsDrink { get; set; }
-        public int ItemId { get; set; }
+        public int ItemId { get; set; } = -1; // as the default the slot has no product in it on creation
 
         public void Mapping(Profile profile)
         {

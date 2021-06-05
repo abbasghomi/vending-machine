@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using VendingMachine.Domain.DTOs;
+﻿using VendingMachine.Domain.DTOs;
 
 namespace VendingMachine.Domain.Entities
 {
@@ -7,8 +6,8 @@ namespace VendingMachine.Domain.Entities
     {
 
         public virtual Payment Payment { get; set; }
-        public virtual ICollection<InvoiceDetail> InvoiceDetails { get; set; } = new HashSet<InvoiceDetail>();
-        public virtual ICollection<Refund> Refunds { get; set; } = new HashSet<Refund>();
+        public virtual InvoiceDetail InvoiceDetail { get; set; }
+        public virtual Refund Refund { get; set; }
 
     }
 }
