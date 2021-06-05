@@ -5,11 +5,34 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Services\Order\**" />
+    <EmbeddedResource Remove="Services\Order\**" />
+    <None Remove="Services\Order\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Common\Extensions\StringExtension.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\VendingMachine.Domain\Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Common\" />
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="FluentValidation" Version="10.2.3" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="10.2.3" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Common\Extensions\" />
+    <Folder Include="Common\ViewModels\" />
+    <Folder Include="Services\Machine\Slots\Common\DTOs\" />
+    <Folder Include="Services\Product\Drinks\Common\DTOs\" />
+    <Folder Include="Services\Product\Foods\Common\DTOs\" />
   </ItemGroup>
 
 </Project>
