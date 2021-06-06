@@ -5,12 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Services\Order\**" />
-    <EmbeddedResource Remove="Services\Order\**" />
-    <None Remove="Services\Order\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Compile Remove="Common\Extensions\StringExtension.cs" />
   </ItemGroup>
 

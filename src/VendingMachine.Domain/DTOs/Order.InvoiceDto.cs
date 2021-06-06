@@ -11,14 +11,13 @@ namespace VendingMachine.Domain.DTOs
 
         public int Id { get; set; }
         public DateTime Date { get; set; }
-        public decimal TotalPrice { get; set; }
-        public decimal TotalRefund { get; set; }
+        public int ItemId { get; set; }
+        public decimal ItemPrice { get; set; }
+        public decimal RefundAmount { get; set; }
         public bool IsRefunded { get; set; } = false;
 
-        public int InvoiceDetailId { get; set; }
-        public int? RefundID { get; set; }
+        public int? RefundedInvoiceId { get; set; }
         public int PaymentId { get; set; }
-
 
         public void Mapping(Profile profile)
         {

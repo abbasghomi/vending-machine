@@ -20,6 +20,7 @@ namespace VendingMachine.Application.Services.Machine.Slots.Commands.UpdateSlot
 
         public UpdateSlotCommandValidator(IApplicationDbContext context, IMapper mapper)
         {
+
             _context = context;
             _mapper = mapper;
 

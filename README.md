@@ -3,7 +3,27 @@
 
 
 
-In this project we are simulating a Vending Machine 
+In this project we are simulating a Vending Machine :
+
+> Beverage / Food Vending Machine
+>
+> Scenario: 
+>
+> We will produce a vending machine software. 
+>
+> The machine should be designed to deliver both drinks and food. 
+>
+> There must be 20 food  and 10 beverage product slots. 
+>
+> Quantity can be chosen for all products. 
+>
+> Hot drinks should be able to choose the amount of sugar. 
+>
+> As a payment type, credit card should be able to make contact / contactless, cash and  coin / paper distinctions. (Card validity, balance control, etc. are not required.) 
+>
+> In the information receipt to be received at the end of the transaction, the product name,  number, payment method, and if any, the refunded amount must be written. 
+>
+> The application steps must be done in the order to produce the product selection, quantity  selection, payment selection, refund and information receipt information.
 
 
 
@@ -87,7 +107,7 @@ As you see we defined base properties in DTO class and the Entity Framework rela
 - [x] CQRS for Machin slots
 - [x] CQRS for product foods
 - [x] CQRS for product drinks
-- [ ] CQRS for order Invoices
+- [x] CQRS for order Invoices
 
 
 

@@ -6,8 +6,7 @@ namespace VendingMachine.Domain.Entities
     {
 
         public virtual Payment Payment { get; set; }
-        public virtual InvoiceDetail InvoiceDetail { get; set; }
-        public virtual Refund Refund { get; set; }
+        public virtual Invoice RefundedInvoice { get; set; }
 
     }
 }
