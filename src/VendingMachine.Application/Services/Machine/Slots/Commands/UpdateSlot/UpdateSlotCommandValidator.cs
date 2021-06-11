@@ -25,7 +25,7 @@ namespace VendingMachine.Application.Services.Machine.Slots.Commands.UpdateSlot
             _mapper = mapper;
 
             RuleFor(v => v.Dto.SlotNumber)
-                .MaximumLength(200)
+                .MaximumLength(10)
                 .NotEmpty();
             RuleFor(v => v.Dto.Quantity)
                 .GreaterThanOrEqualTo(0)

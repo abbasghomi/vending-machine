@@ -12,6 +12,7 @@ namespace VendingMachine.Domain.DTOs
         public int Id { get; set; }
         public DateTime Date { get; set; }
         public int ItemId { get; set; }
+        public bool IsDrink { get; set; }
         public decimal ItemPrice { get; set; }
         public decimal RefundAmount { get; set; }
         public bool IsRefunded { get; set; } = false;

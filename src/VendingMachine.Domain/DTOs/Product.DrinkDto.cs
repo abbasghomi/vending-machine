@@ -7,11 +7,6 @@ namespace VendingMachine.Domain.DTOs
     public class DrinkDto : ItemDto, IMapFrom<Drink>
     {
 
-        public DrinkDto()
-        {
-            IsDrink = true;
-        }
-
         public bool IsHotDrink { get; set; }
         public int SugarAmount { get; set; }
 

@@ -113,9 +113,15 @@ As you see we defined base properties in DTO class and the Entity Framework rela
 
 ### Infrastructure layer
 
+- [x] Persistence implemented in infrastructure layer
+- [x] Added DbContext and Data model configurations 
+
 
 
 ### Presentation layer
+
+- [x] Base controller class
+- [x] Maintenance middleware
 
 
 

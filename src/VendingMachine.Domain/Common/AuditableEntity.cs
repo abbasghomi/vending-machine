@@ -5,9 +5,9 @@ namespace VendingMachine.Domain.Common
 {
     public abstract class AuditableEntity
     {
-        public string CreatedBy { get; set; }
-        public DateTime CreateDate { get; set; }
-        public string LastModifiedBy { get; set; }
+        public int CreatedBy { get; set; } = -1;
+        public DateTime CreateDate { get; set; } = DateTime.Now;
+        public int LastModifiedBy { get; set; } = -1;
         public DateTime? LastModifiedDate { get; set; }
         public bool IsDeleted { get; set; } = false;
 
