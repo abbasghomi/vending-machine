@@ -1,70 +1,26 @@
-# Prerequisites
-*.d
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+src/back/VendingMachine.API/bin/
 
-# Linker output
-*.ilk
-*.map
-*.exp
+src/back/VendingMachine.API/obj/
 
-# Precompiled Headers
-*.gch
-*.pch
+src/back/VendingMachine.Application/bin/
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+src/back/VendingMachine.Application/obj/
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+src/back/VendingMachine.Domain/bin/
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+src/back/VendingMachine.Domain/obj/
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+src/back/VendingMachine.Infrastructure/bin/
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+src/back/VendingMachine.Infrastructure/obj/
 
-.vs/
+src/docker/front/bin/
 
-src/VendingMachine.Application/bin/
+src/docker/front/obj/
 
-src/VendingMachine.Application/obj/
+src/front/VendingMachine.Presentation/bin/
 
-src/VendingMachine.Domain/bin/
+src/front/VendingMachine.Presentation/obj/
 
-src/VendingMachine.Domain/obj/
-
-src/VendingMachine.Infrastructure/bin/
-
-src/VendingMachine.Infrastructure/obj/
-
-bin/
-
-obj/
+*.user
