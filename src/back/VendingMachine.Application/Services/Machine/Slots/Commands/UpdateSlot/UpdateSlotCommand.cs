@@ -37,8 +37,6 @@ namespace VendingMachine.Application.Services.Machine.Slots.Commands.UpdateSlot
             entity.IsDrink = request.Dto.IsDrink;
             entity.SlotNumber = request.Dto.SlotNumber;
 
-            _context.GetDbSet<Slot>().Update(entity);
-
             await _context.SaveChangesAsync(cancellationToken);
 
             return Unit.Value;

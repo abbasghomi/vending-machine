@@ -34,8 +34,6 @@ namespace VendingMachine.Application.Services.Product.Foods.Commands.UpdateFood
 
             entity.Title = request.Dto.Title;
 
-            _context.GetDbSet<Food>().Update(entity);
-
             await _context.SaveChangesAsync(cancellationToken);
 
             return Unit.Value;

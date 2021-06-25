@@ -25,13 +25,13 @@ namespace VendingMachine.Application.Services.Product.Foods.Commands.DeleteFood
         public async Task<Unit> Handle(DeleteFoodCommand request, CancellationToken cancellationToken)
         {
             var entity = await _context.GetDbSet<Food>().FindAsync(request.Id);
-            var slotEntity = _context.GetDbSet<Slot>().Where(ent => ent.ItemId == entity.Id).ToList();
-            slotEntity.ForEach(ent => { if (ent.ItemId == entity.Id) { ent.ItemId = -1; } });
-
             if (entity == null)
             {
                 throw new NotFoundException(nameof(Food), request.Id);
             }
+
+            var slotEntity = _context.GetDbSet<Slot>().Where(ent => ent.ItemId == entity.Id).ToList();
+            slotEntity.ForEach(ent => { if (ent.ItemId == entity.Id) { ent.ItemId = -1; } });
 
             _context.GetDbSet<Food>().Remove(entity);
             //remove deleted item from machine slots

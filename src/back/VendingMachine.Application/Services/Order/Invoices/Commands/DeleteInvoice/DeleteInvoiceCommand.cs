@@ -25,12 +25,12 @@ namespace VendingMachine.Application.Services.Order.Invoices.Commands.DeleteInvo
         public async Task<Unit> Handle(DeleteInvoiceCommand request, CancellationToken cancellationToken)
         {
             var entity = await _context.GetDbSet<Invoice>().FindAsync(request.Id);
-            var paymentEntity = _context.GetDbSet<Payment>().Where(ent => ent.InvoiceId == entity.Id).FirstOrDefault();
-
             if (entity == null)
             {
                 throw new NotFoundException(nameof(Invoice), request.Id);
             }
+
+            var paymentEntity = _context.GetDbSet<Payment>().Where(ent => ent.InvoiceId == entity.Id).FirstOrDefault();
 
             _context.GetDbSet<Invoice>().Remove(entity);
             if (paymentEntity != null)

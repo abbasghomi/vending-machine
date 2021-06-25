@@ -34,8 +34,6 @@ namespace VendingMachine.Application.Services.Order.Invoices.Commands.UpdateInvo
 
             entity.Date = request.Dto.Date;
 
-            _context.GetDbSet<Invoice>().Update(entity);
-
             await _context.SaveChangesAsync(cancellationToken);
 
             return Unit.Value;
