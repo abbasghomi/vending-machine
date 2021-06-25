@@ -24,3 +24,5 @@ src/front/VendingMachine.Presentation/bin/
 src/front/VendingMachine.Presentation/obj/
 
 *.user
+
+.vs/
